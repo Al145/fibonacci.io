@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: white;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/fib3.png);
+    border: 4px double black;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .part_1, .part_2, .part_3 {
+    display: grid;
+    grid-gap: 14px;
+    margin: 44px;
+  }
+  
+  .part_1 {
+    grid-template-rows: repeat(2, 111px);
+    grid-template-columns: repeat(2, 111px);
+  }
+
+  .part_1 div {
+      background: rgba(95, 176, 187, 0.5);
+  }
+  
+  .part_2 {
+    grid-template-rows: repeat(3, 95px);
+    grid-template-columns: repeat(3, 95px);
+  }
+
+  .part_2 div {
+    background: rgba(156, 26, 113, 0.5);
+}
+  
+  .part_3 {
+    grid-template-rows: repeat(4, 77px);
+    grid-template-columns: repeat(4, 77px);
+  }
+ 
+  .part_3 div {
+    background: rgba(20, 165, 63, 0.5);
+}
